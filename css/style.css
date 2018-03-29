@@ -1,0 +1,452 @@
+/* #####################################################################
+   #
+   #   Project       : YU ACM Website
+   #   Created By    : ACM Members
+   #   Date          : 20/08/2016
+   #
+   ##################################################################### */
+
+/* #########################################
+   #              WEB FONTS                #
+   ######################################### */
+@font-face {
+    font-family: 'Abolition Regular';
+    src: url('../fonts/abolition-regular-webfont.eot');
+    src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/abolition-regular-webfont.woff') format('woff'),
+         url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+/* #########################################
+   #             BASE STYLE                #
+   ######################################### */
+* {
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+body {
+    background-color: #fcf8f3;
+    color: #586172;
+    margin: 0;
+    font-size: 1.3em "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1,
+h2
+{
+    font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+}
+.m-t-20{
+    margin-top: 10rem !important;
+}
+h1 {
+    font-size: 5.625rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: normal;
+    line-height: 1.3;
+    text-shadow: 0 2px 2px #000;
+    margin: 12px 0 0;
+    font-size: 5em;
+}
+h2 {
+    font-size: 3.3125em;
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 0 0 .5em;
+}
+h3 {
+    font-size: 3rem;
+    color: #ffa949;
+    line-height: 1.3;
+    margin-bottom: 1.7em;
+}
+.img-hvr{
+    -webkit-filter: grayscale(65%);
+    filter: grayscale(65%);
+}
+.activity-img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    filter: grayscale(50%);
+}
+.col-md-6,
+.col-md-12 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: normal;
+    letter-spacing: .1.5rem;
+}
+ul {
+    margin: 30px 0;
+}
+li {
+    margin-bottom: 10px;
+}
+.font {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* #########################################
+   #              JUMBOTRON                #
+   ######################################### */
+.bg-2 {
+    background-color: #36485c;
+    color: #ffffff;
+  }
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+#jumbotron-1 {
+    color: #36485c;
+    background-color: #ece0df;
+    border-top: 7px solid #f38c47;
+    margin-bottom: -30px;
+}
+#jumbotron-3 {
+    margin-bottom: 0;
+    background-color: #ece0df ;
+}
+#jumbotron-2 {
+    margin-bottom: 0;
+    border-bottom: 7px solid #f38c47;
+}
+#jumbotron-4 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* #########################################
+   #                NAVBAR                 #
+   ######################################### */
+.nav-pills {
+    margin-top: 17px;
+    border-radius: 20px;
+}
+.logo img {
+    width: 70%;
+    max-width: 70%;
+}
+
+/* #########################################
+   #           PSUEDO CLASSES              #
+   ######################################### */
+a:link {
+    color:  #8c8c8c;
+    text-decoration: none;
+}
+a:visited {
+    color:#777;
+}
+a:hover {
+    color: #f38c47;
+}
+
+/* #########################################
+   #            MAIN STYLES                #
+   ######################################### */
+.main-header {
+    padding-top: 170px;
+    height: 850px;
+    background: linear-gradient(#586172, transparent 50%),
+                #c3b4a4 url('../img/background.png') no-repeat center;
+    background-size: cover;
+    color: #ccc;
+}
+.primary-content,
+.main-header,
+.main-footer {
+    text-align: center;
+}
+.primary-content {
+    padding-top: 25px;
+    padding-bottom: 95px;
+    font-size: 1.25rem;
+    line-height: 2em;
+}
+
+/* #########################################
+   #            LAYOUT STYLES              #
+   ######################################### */
+.primary-content {
+    width: 75%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    max-width: 960px;
+}
+
+/* #########################################
+   #               HOME PAGE               #
+   ######################################### */
+.intro {
+    line-height: 2.9rem;
+}
+
+/* #########################################
+   #              ABOUT PAGE               #
+   ######################################### */
+.featurette-divider {
+    margin: 35px 0;
+}
+.featurette {
+    overflow: hidden;
+}
+.featurette-img-1 {
+    min-width: 225px;
+    width: 225px;
+    min-height: 225px;
+    height: 225px;
+}
+.featurette-image.pull-left {
+    margin-right: 30px;
+}
+.featurette-image.pull-right {
+    margin-left: 30px;
+}
+.featurette-heading {
+    font-size: 50px;
+}
+
+/* #########################################
+   #           ACTIVITY PAGE               #
+   ######################################### */
+#activities {
+  background-color: #ece0df;
+}
+.container-fluid {
+      padding: 60px 50px;
+  }
+.thumbnail {
+    margin-bottom: 60px;
+    min-height: 350px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 5px #b1afaf;
+}
+.thumbnail:hover {
+    border: 1px solid #586172;
+}
+.thumbnail img {
+    padding-top: 5px;
+    min-height: 250px;
+    height: 250px;
+}
+#activity-btn {
+    margin-bottom: 15px;
+    color: #fff;
+    background-color: #9fabb2;
+    border-radius: 10px;
+}
+#activity-btn:hover {
+    color: #fff;
+    background-color: #003366;
+}
+
+/* #########################################
+   #            CONTACT PAGE               #
+   ######################################### */
+#contact {
+    padding:50px 90px;
+}
+.col-sm-4 a {
+    font-size: 1.8rem;
+}
+.fa-stack {
+    color: #f38c47;
+    font-size: 8rem;
+    cursor: pointer;
+}
+.fa-stack i:hover {
+    color: #b3b3b3;
+}
+.fa-stack a:hover {
+    color: #47506b;
+    text-decoration: none;
+}
+.fa-stack a:visited {
+    color: #804000;
+}
+.btn-danger {
+    background-color: #f4511e;
+    opacity: .7;
+}
+.btn-info {
+    background-color: #777;
+}
+.bg-contact {
+    background-color: #eee;
+}
+.btn-contact {
+    padding-bottom: 60px;
+    background-color: #eee;
+    color: #474e5d;
+}
+.btn-contact button:hover {
+    background: #b3b3b3;
+    color: #1f3d7a;
+}
+.font button {
+    color: #586172;
+}
+
+/* #########################################
+   #             JOIN FORM                 #
+   ######################################### */
+#join-us {
+    margin-top: 20px;
+}
+
+  /* #########################################
+   #                FOOTER                 #
+   ######################################### */
+.main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 5px solid #f38c47;
+    font-size: 1.2em;
+    color: #ccc;
+    background-color: #36485c;
+}
+.main-footer a {
+    color: #ccc;
+}
+.main-footer a:hover {
+    color: #f38c47;
+}
+
+/* #########################################
+   #            MEDIA QUERY               #
+   ######################################### */
+@media (max-width: 1024px) {
+  .primary-content {
+    width: 90%;
+  }
+}
+@media(max-width:1200px) {
+    .featurette-divider {
+        margin: 15px 0;
+    }
+    .featurette-image.pull-left {
+        margin-right: 20px;
+    }
+    .featurette-image.pull-right {
+        margin-left: 20px;
+    }
+    .featurette-heading {
+        font-size: 35px;
+    }
+}
+@media(max-width:991px) {
+    .featurette-divider {
+        margin: 40px 0;
+    }
+    .featurette-image {
+        max-width: 50%;
+    }
+    .featurette-image.pull-left {
+        margin-right: 10px;
+    }
+    .featurette-image.pull-right {
+        margin-left: 10px;
+    }
+    .featurette-heading {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+@media(max-width:768px) {
+    .container {
+        margin: 0 15px;
+    }
+    .featurette-divider {
+        margin: 20px 0;
+    }
+    .featurette-heading {
+        font-size: 25px;
+    }
+    .logo img {
+        width: 50%;
+        max-width: 50%;
+    }
+  .primary-content{
+    width: 100%;
+    padding: 20px;
+    border-top: none;
+  }
+}
+@media(max-width:668px) {
+    .featurette-divider {
+        margin: 30px 0;
+    }
+}
+@media screen and (max-width: 480px){
+    .btn-warning {
+        width: 50%;
+        margin-bottom: 2em;
+    }
+}
+@media screen and (max-width: 480px){
+    .main-header h1 {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 480px){
+    .main-footer {
+        font-size: 1.3rem;
+        border-bottom: 7px solid #f38c47 ;
+        color: #ccc;
+    }
+}
+@media (max-width: 480px){
+    .logo img {
+        width: 61%;
+        max-width: 61%;
+    }
+}
+@media(max-width:375px) {
+
+    .featurette-divider {
+        margin: 10px 0;
+    }
+    .featurette-image {
+        max-width: 100%;
+    }
+    .featurette-image.pull-left {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .featurette-image.pull-right {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    .main-header {
+        max-height: 380px;
+        padding: 50px 25px 0;
+    }
+    .title {
+        font-size: 1.3rem;
+        border: none;
+    }
+    h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+    h3 {
+        color: #ffa949;
+    }
+    #join-us {
+        width: 40%;
+        max-width: 40%;
+        font-size: 1.3rem;
+        margin-top:0;
+    }
+}
+/* #########################################
+   #           END OF STYLE SHEET          #
+   ######################################### */

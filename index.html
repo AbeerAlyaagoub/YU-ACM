@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ACM | YU Student Chapter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS ===========================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font-awesome ===========================-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Bubbler+One|Chathura:700|Comfortaa|Poiret+One|Quicksand|Rajdhani:500" rel="stylesheet">
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!-- Navigation -->
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="#" class="logo"><img src="img/acm-logo.jpg" class="img-responsive"> </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse nav-pills navbar-right" id="myNavbar" style="border-radius: 20px">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#index">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#page3">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li id="login"><a href="#login-btn" data-toggle="modal" data-target="#login-btn">Login</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div> <!-- /.container -->
+        </nav> <!-- Navigation ends here -->
+      </div>
+    </div>
+    <!-- Login form -->
+    <div id="login-btn" class="modal fade">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-danger">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title text-center font">Please Login Here! </h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <h5 class="m-b-2">  </h5>
+              <fieldset class="form-group">
+                <label for="name">User Name:</label>
+                <input type="text" class="form-control" name="username" id="name" required="" autofocus="">
+              </fieldset>
+              <fieldset class="form-group has-danger">
+                <label for="password" class="form-control-label p-l-0">Password:</label>
+                <input type="password" class="form-control form-control-danger" id="password" required="">
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="rememberMe" class="checkbok">
+                  <input type="checkbox" value="remember-me" id="rememberMe" class="form-checkbox-input"> Remember Me
+                </label>
+              </fieldset>
+              <button type="submit" class="btn btn-danger bg-danger btn-lg btn-block">Login</button>
+            </form><!-- Contact form Ends Here-->
+          </div>
+        </div><!-- End of .modal-content -->
+      </div><!-- End of .modal-dialog -->
+    </div><!-- End of .modal -->
+  <!-- Home page starts here -->
+    <div id="page1">
+      <a id="index" class="smooth"></a>
+      <header id="top" class="main-header">
+        <div class="container m-t-20 font">
+          <h1>We Enable Great People to Great opportunities</h1>
+        <div>
+          <button id="join-us" type="button" class="btn btn-warning btn-lg center-block font" data-toggle="modal" data-target="#join-btn">Join us now!</button>
+        </div>
+        </div>
+      </header>
+      <!-- Home page ends here -->
+      <!-- Join button -->
+      <div id="join-btn" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-danger">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title text-center font">Join us now! </h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" name="username" id="name" required="" autofocus="">
+                </div>
+                <div class="form-group">
+                  <label for="Email1">Email address</label>
+                  <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                  <h6 id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</h6>
+                </div>
+                <div class="form-group">
+                  <label for="number-input">Phone Number</label>
+                  <input type="tel" class="form-control" id="InputPhoneNumber" aria-describedby="NumberHelp">
+                  <h6 id="PhoneNumberHelp" class="form-text text-muted">Optional field</h6>
+                </div>
+                <div class="form-group">
+                  <label for="number-input">Membership Number</label>
+                  <input type="number" class="form-control" id="InputNumber" aria-describedby="NumberHelp">
+                  <a class="form-text text-muted" href="https://campus.acm.org/public/qj/quickjoin/qj_control.cfm?form_type=Student" id="MembershipHelp"><h6>Membership number should be taken from your ACM official account.</h6></a>
+                </div>
+                <div class="form-group">
+                  <label for="InputFile"></label>
+                  <input type="file" class="form-control-file" id="InputFile" aria-describedby="fileHelp">
+                  <small id="fileHelp" class="form-text text-muted">Please upload your membership card here !</small>
+                </div>
+                <button id="submit-btn" type="submit" class="btn btn-danger bg-danger btn-lg btn-block">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- About us page starts here -->
+    <div id="page2">
+      <a id="about" class="smooth"></a>
+       <div id="jumbotron-1" class="jumbotron text-center"></div>
+        <div class="container-fluid bg-2 text-center">
+          <h2 class="text-center" style="color: #d9d7d6">Who we are</h2>
+            <div class="container">
+              <div class="" id="collapseTwo">
+                <p class="col-md-12 text-center intro">ACM is one of the world's best educational and scientific computing society that delivers resources that advance computing. ACM's professional student chapters aim to provide the wide range of activities for the ACM members and community we live in.</p>
+                <div id="ShowMore" class="col-md-12 text-center collapse">
+                  <p> We are a group of Al Yamamah University students who are aspiring to build a community of creative and innovative minds. Our team is made up professional, collaborative and talented individuals. Each of whom is capable to to deliver a unique value to the team, and to inspire for a better change.</p>
+                </div>
+            </div>
+            <a class="btn btn-default" data-toggle="collapse" data-parent="#threeW" href="#ShowMore" role="button" style="background-color: #b3e6ff; color: #36485c">Read More &raquo;</a>
+        </div>
+      </div>
+      <div id="jumbotron-2" class="jumbotron">
+        <!-- Page Content -->
+        <div class="container">
+            <hr class="featurette-divider">
+            <!-- First Featurette -->
+            <div class="featurette">
+                <img class="featurette-image img-rounded img-responsive pull-right featurette-img-1" src="img/dev-tool.png">
+                <h2 class="featurette-heading">
+                    <span class="text-muted">MISSION</span>
+                </h2>
+                <br>
+                <p class="lead">To provide an effective learning environment for ambitious students to improve thier technical knowledge and skills, which will ultimately serve our community by providing state-of-the-art computer technology solutions </p>
+            </div>
+            <hr class="featurette-divider">
+            <!-- Second Featurette -->
+            <div class="featurette">
+                <img class="featurette-image img-rounded img-responsive pull-left" src="img/vision.png">
+                <h2 class="featurette-heading">
+                    <span class="text-muted">VISION</span>
+                </h2>
+                <br>
+                <p class="lead">To reach the highest levels of excellence in the use of application and computer technology.</p>
+            </div>
+            <hr class="featurette-divider">
+        </div>
+      </div>
+  </div>  <!-- About page ends here -->
+   <!-- Activity page starts here -->
+    <div id="page3">
+      <a  class="smooth"></a>
+      <div id="jumbotron-3" class="jumbotron text-center">
+          <h1>Activities</h1>
+      </div>
+      <div id="activities" class="container-fluid text-center bg-grey">
+      <br>
+         <div class="row text-center">
+           <!-- #1 -->
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="img/website.png" alt="Web Development" width="270" height="140">
+                <p><strong>Web Development</strong></p>
+                <button type="button" id="activity-btn" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal-1">more info</button>
+              </div>
+            </div>
+           <!-- #2 -->
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="img/erd.png" alt="ERD" width="270" height="140">
+                <p><strong>ERD Development</strong></p>
+                <button type="button" id="activity-btn" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal-2">more info</button>
+              </div>
+            </div>
+           <!-- #3 -->
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="img/servers.png" alt="Data Centers" width="270" height="140">
+                <p><strong>Data Center and IT Management</strong></p>
+                <button type="button" id="activity-btn" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal-3">more info</button>
+              </div>
+            </div>
+           <!-- #4 -->
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="img/coding.png" alt="Coach Academy" width="270" height="140">
+                <p><strong>Coach Academy</strong></p>
+                <button type="button" id="activity-btn" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal-4">more info</button>
+              </div>
+            </div>
+         </div>
+      </div><!-- Page Content Ends ere -->
+     <!-- Modal -->
+      <div id="modal">
+        <!-- Modal #1 -->
+        <div class="modal fade" id="myModal-1" role="dialog">
+          <div class="modal-dialog">
+           <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Web Development</h4>
+              </div>
+              <div class="modal-body">
+                <p>This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       <!-- Modal #2-->
+        <div class="modal fade" id="myModal-2" role="dialog">
+          <div class="modal-dialog">
+           <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">ERD Development</h4>
+              </div>
+              <div class="modal-body">
+                <p>This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       <!-- Modal #3-->
+        <div class="modal fade" id="myModal-3" role="dialog">
+          <div class="modal-dialog">
+           <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Data Center and IT Management</h4>
+              </div>
+              <div class="modal-body">
+                <p>This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       <!-- Modal #3-->
+        <div class="modal fade" id="myModal-4" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Coach Academy</h4>
+              </div>
+              <div class="modal-body">
+                <p>This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End od Modal -->
+    </div>  <!-- Activity page ends here -->
+    <!-- Contact page starts here -->
+    <div id="page4" class="bg-contact">
+      <a id="contact" class="smooth"></a>
+        <!-- Jumbotron -->
+        <div id="jumbotron-4" class="jumbotron text-center">
+          <h1>CONTACT US</h1>
+          <p>We value your opinion!</p>
+        </div> <!-- End of Jumbotron -->
+        <div id="contact" class="container-fluid text-center">
+          <div class="row slideanim">
+            <div class="col-sm-4">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-twitter fa-stack-3x"></i>
+              </span>
+              <p><a href="https://twitter.com/yu_acm">@YU_ACM</a></p>
+            </div>
+            <div class="col-sm-4">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-envelope fa-stack-3x"></i>
+              </span>
+              <p><a href="mailto:yu_acm@yu.edu.sa">yu_acm@yu.edu.sa</a></p>
+            </div>
+            <div class="col-sm-4">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-map-marker fa-stack-3x"></i>
+              </span>
+              <p>
+                <a href="https://www.google.com.sa/maps?q=alyamamah+university&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjq8tqAv8LOAhWILsAKHXoBC18Q_AUICCgB"> Riyadh, Saudi Arabia </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End of contact info  -->
+        <div class="btn-contact">
+          <button type="button" class="btn btn-info-outline btn-lg center-block " data-toggle="modal" data-target="#Contact-us">Let's get in touch!</button>
+        </div>
+    </div>
+   <!-- Form Starts here -->
+    <div id="Contact-us" class="modal fade">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-danger">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title text-center font">Don't hesitate to contact us </h4>
+          </div>
+          <div class="modal-body">
+           <!-- Contact form -->
+            <form>
+              <h5 class="m-b-2">  </h5>
+              <fieldset class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name">
+              </fieldset>
+              <fieldset class="form-group has-danger">
+                <label for="mail" class="form-control-label p-l-0">Email:</label>
+                <input type="email" class="form-control form-control-danger" id="mail">
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="7" id="comment"></textarea>
+              </fieldset>
+              <button type="submit" class="btn btn-danger bg-danger btn-lg">Send</button>
+            </form><!-- /Contact form -->
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+   <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container fluid">
+        <p >&copy; All Rights Reserved to ACM Student Chapter of <a href="http://yu.edu.sa/">Al-Yamamah University.</a></p>
+      </div>
+      <div>
+        <a href="#top" class="top">Back to top &raquo;</a>
+      </div>
+    </footer><!-- End of Footer -->
+
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+       // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+        // Store hash
+        var hash = this.hash;
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+          });
+        } // End if
+      });
+    })
+
+      jQuery(document).ready(function() {
+        var offset = 220;
+        var duration = 1000;
+        jQuery(window).scroll(function() {
+          if (jQuery(this).scrollTop() > offset) {
+            jQuery('.top').fadeIn(duration);
+          } else {
+            jQuery('.top').fadeOut(duration);
+          }
+        });
+
+      jQuery('.top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+      })
+    });
+
+    $('#ShowMore').on ('hidden.bs.collapse',function(){
+        $('#link').text('Read Less');
+      })
+    </script>
+  </body>
+</html>
